@@ -1,0 +1,118 @@
+html
+{
+	scroll-behavior:smooth;
+}
+body
+{
+	margin:0px;
+	background:linear-gradient(45deg,red,black,orange,gold);
+}
+header,footer
+{
+	padding:5px;
+	background:linear-gradient(45deg,yellow,cyan,pink);
+}
+header>img
+{
+	height:50px;
+	width:50px;
+	border-radius:100%;
+	border:5px solid blue;
+	box-shadow:0 0 10px blue;
+}
+header>span
+{
+	position:relative;
+	top:-16px;
+	font-size:40px;
+	font-weight:bold;
+	margin-left:5px;
+	color:blue;
+	display:inline-block;
+}
+
+/*----------Navbar Styles*/
+nav
+{
+	background-color:purple;
+	padding:10px;
+	text-align:center;
+}
+nav>a
+{
+	color:white;
+	padding:5px;
+	display:inline-block;
+	width:110px;
+	text-transform:uppercase;
+	text-decoration:none;
+	border-radius:20px;
+}
+nav>a:hover
+{
+	background-color:white;
+	color:blue;
+	box-shadow:0 0 10px yellow;
+}
+/*-----Sidebar Styles-------*/
+aside
+{
+	background-color:cyan;
+	width:130px;
+	height:1266px;
+	text-align:center;
+	padding:20px;
+	float:left;
+}
+aside>a
+{
+	display:block;
+	text-decoration:none;
+	margin-bottom:250px;
+	padding:5px 15px;
+}
+aside>a:hover
+{
+	background-color:purple;
+	color:white;
+	box-shadow:0 0 10px blue;
+	border-radius:20px;
+}
+/*------Main Section---------*/
+section
+{
+	margin-left:170px;
+	color:red;
+	background-color:white;
+	padding:10px;
+}
+section>h1
+{
+	margin:0px;
+}
+section>article
+{
+	background-color:deeppink;
+	color:white;
+	padding:10px;
+	margin-top:5px;
+	border-radius:20px;
+}
+/*------Footer Styles------*/
+footer
+{
+	text-align:center;
+}
+
+
+/*------Balu Page------*/
+#balu-sec
+{
+	margin-left:0px;
+	text-align:center;
+}
+#balu-sec>article
+{
+	width:300px;
+	display:inline-block;
+}
