@@ -1,0 +1,70 @@
+body{
+
+	background: linear-gradient(45deg,yellowgreen,lightcyan,orange);
+	/*background-image: yellow url(../Images/form1.png);*/
+	background-attachment: fixed;
+
+	display: block;
+	margin-left: 35px;
+	margin-right: 50px;
+	margin-bottom: 40px;
+
+}
+table td{
+	font-size: 18px;
+	padding: 5px 5px 5px 5px;
+}
+td{
+	font-family: cursive;
+	font-style: oblique;
+	display: table-cell;
+	vertical-align: inherit;
+}
+table{
+	border-collapse: separate;
+	text-indent: initial;
+	border-spacing: 2px 2px 2px;
+}
+legend{
+	background-color: skyblue;
+	font-family: cursive;
+	font-size: 20px;
+	font-style: italic;
+
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+	margin: 5px 5px 5px 5px;
+
+	border-radius: 0 20px 0 20px;
+}
+h1{
+	font-family: cursive;
+}
+label{
+	font-family: sans-serif;
+}
+fieldset{
+	border-color: orange;
+	border-width: thick;
+	border-radius: 0 20px 0 20px;
+}
+#submit{
+	padding: 10px 10px 10px 10px;
+	margin: 5px 5px 5px 5px;
+	border-radius: 0 20px 0 20px;
+	border-width: 5px;
+	color: white;
+	background-color: green;
+}
+#reset{
+	background-color: mediumvioletred;
+
+	padding: 10px 10px 10px 10px;
+	margin: 5px 5px 5px 5px;
+	border-radius: 0 20px 0 20px;
+	border-width: 5px;
+	color: white;
+}
