@@ -1,0 +1,54 @@
+body{
+	background-color: ghostwhite;
+}
+#header{
+	background-color: limegreen;
+	margin-top: -18px;
+	padding: 5px auto;
+
+	/*position: relative;*/
+}
+#header>h3{
+	font-family: cursive;
+	font-size: 25px;
+}
+#header>#header-wrap{
+	padding: inherit;
+	margin-top: -39px;
+	margin-left: 120px;
+	border-left: 75px;
+	text-align: center;
+	border-top: 70px;
+	/*display: inline;
+	position: absolute;*/
+}
+#header>#header-wrap>a{
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+}
+#header>#header-wrap>button{
+	border-color: blue;
+	color: blue;
+}
+#content>#content-wrap{
+	margin-left: 40px;
+}
+#content>#content-wrap>h1{
+	font-size: 40px;
+}
+#content>#content-wrap>h6{
+	font-size: 17px;
+}
+#content>#content-wrap>form>input{
+	border-width: 2px;
+}
+#content>#content-wrap>form>button{
+	background-color: darkblue;
+	color: white;
+}
+#content>#image{
+	margin-top: -329px;
+	margin-left: 550px;
+}
