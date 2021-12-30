@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display Properties</title>
+	<style>
+		body{
+			margin: 0px;
+		}
+		#links{
+			background: lightpink;
+			text-align: center;
+			padding: 10px;
+			/*position: relative*/
+			top: 10px;
+			left: 500px;
+		}
+		#links a{
+			color: white;
+			background: linear-gradient(45deg,red,blue);
+			text-decoration: none;
+			display: inline-block;
+			width: 100px;
+			border-radius: 20px;
+		}
+		a:hover {
+			box-shadow: 0 0 10px blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+		<a href="">Home</a>
+		<a href="">About</a>
+		<a href="">Gallery</a>
+		<a href="">Contact Us</a>
+		<a href="">Log In</a>
+	</div>
+</body>
+</html>
