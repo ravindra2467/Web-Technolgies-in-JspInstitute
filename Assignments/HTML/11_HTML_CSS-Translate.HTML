@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Translate</title>
+	<style>
+		body{
+			background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet) no-repeat fixed;
+		}
+		div{
+			box-shadow: 0 0 10px darkred;
+			width: 220px;
+			height: 260px;
+			margin: 60px auto;
+			border-radius: 20px;
+			overflow: hidden;
+			position: relative;
+			background-color: rgb(126, 6, 6);
+		}
+		div>img{
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+
+			transition: all 2s linear 0s;
+		}
+		div:hover{
+			cursor: pointer;
+		}
+		div:hover>img{
+			transform: translateY(-100px);
+		}
+		div>#details{
+			position: absolute;
+			top: 200px;
+			left: 0px;
+			background-color: rgb(126, 6, 6);
+			height: 100px;
+			transition: all 2s linear 0s;
+		}
+		div>#details>tr>th{
+			border-radius: 100%;
+			padding: 8px;
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+			color: black;
+		}
+		div:hover>#details{
+			transform: translateY(-100px);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../Images/shirt.jpg">
+		<div id="details">
+			<table align="center">
+				<tr>
+					<th>Men's Casual Shirt</th>
+				</tr>
+				<tr>
+					<th>US POLO</th>
+				</tr>
+				<tr>
+					<th>&#8377;1999.00</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

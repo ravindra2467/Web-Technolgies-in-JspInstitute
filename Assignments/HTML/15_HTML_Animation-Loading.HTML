@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation Loading</title>
+	<style>
+		body{
+			background-color: lightgoldenrodyellow;
+		}
+		div{
+			position: relative;
+			top: 250px;
+			left: 550px;
+		}
+		div span{
+			width: 20px;
+			height: 30px;
+			background-color: blueviolet;
+			display: inline-block;
+			margin: 5px;
+			box-shadow: 0 -5px 10px white;
+			border: 3px solid white;
+
+			/*Animation properties*/
+
+			animation: loading 1s linear 1s infinite alternate-reverse;
+		}
+		div>span:nth-child(1){
+			background-color: red;
+			animation-delay: 0.1s;
+		}
+		div>span:nth-child(2){
+			background-color: blue;
+			animation-delay: 0.7s;
+		}
+		div>span:nth-child(3){
+			background-color: yellow;
+			animation-delay: 0.1s;
+		}
+		div>span:nth-child(4){
+			background-color: pink;
+			animation-delay: 0.7s;
+		}
+		div>span:nth-child(5){
+			background-color: green;
+			animation-delay: 0.1s;
+		}
+		div>span:nth-child(6){
+			background-color: violet;
+			animation-delay: 0.7s;
+		}
+		@keyframes loading{
+			0%{
+				transform: scaleY(0.0);
+			}
+			100%{
+				transform: scaleY(2.0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>

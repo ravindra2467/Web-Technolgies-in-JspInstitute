@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Registration Form</title>
+	<style>
+		#main{
+			align-content: center;
+			border: 2px dashed black;
+			margin-left: 150px;
+			margin-right: 150px;
+			background: linear-gradient(180deg,lightblue,violet);
+		}
+		h2{
+			color: blue;
+		}
+		#main form table{
+			margin-left: 170px;
+			margin-right: 170px;
+			padding: 40px;
+			width: 100%;
+		}
+		table td{
+			padding: 10px 5px 10px 5px;
+		}
+		label{
+			font-family: cursive;
+			font-size: 15px;
+		}
+		#main>form{
+			padding: 10px;
+		}
+		button{
+			border-radius: 20px;
+			background: linear-gradient(180deg,lightblue,violet);
+			box-sizing: 10px;
+			box-shadow: 5px darkred;
+		}
+		button:hover{
+			cursor: pointer;
+			color: darkred;
+		}
+	</style>
+</head>
+<body>
+	<h2 align="center">Student Registration Form</h2>
+	<div id="main">
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>First Name</label>
+					</td>
+					<td>
+						<input type="text" name="First_Name" required>(<i>Maximum 30 Characters are allowed</i>)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Last Name</label>
+					</td>
+					<td>
+						<input type="text" name="Last_Name" required>(<i>Maximum 30 Characters are allowed</i>)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Email</label>
+					</td>
+					<td>
+						<input type="email" name="Email" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Mobile Number</label>
+					</td>
+					<td>
+						<input type="Number" name="Mobile_Number" required>(<i>Maximum 10-Digits</i>)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Gender</label>
+					</td>
+					<td>
+						<input type="radio" name="Gender"><i>Male</i>
+						<input type="radio" name="Gender"><i>Female</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Date Of Birth</label>
+					</td>
+					<td>
+						<select>
+							<option>Day</option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							<option>05</option>
+							<option>06</option>
+							<option>07</option>
+							<option>08</option>
+							<option>09</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select>
+							<option>Month</option>
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>May</option>
+							<option>June</option>
+							<option>July</option>
+							<option>August</option>
+							<option>September</option>
+							<option>October</option>
+							<option>November</option>
+							<option>December</option>
+						</select>
+						<select>
+							<option>Year</option>
+							<option>1999</option>
+							<option>2000</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Address</label>
+					</td>
+					<td>
+						<textarea rows="8" cols="40"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>City</label>
+					</td>
+					<td>
+						<input type="text" name="City" required><i>(Maximum 20 Characters allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Pin Code</label>
+					</td>
+					<td>
+						<input type="Number" name="pin_Code" required><i>(Maximum 6 Numbers allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>State</label>
+					</td>
+					<td>
+						<input type="text" name="State" required><i>(Maximum 20 Characters allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Country</label>
+					</td>
+					<td>
+						<input type="text" name="Country" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Hobbies</label>
+					</td>
+					<td>
+						<input type="checkbox" name="Hobbies"><i>Listening Music</i>
+						<input type="checkbox" name="Hobbies"><i>Drawing</i>
+						<input type="checkbox" name="Hobbies"><i>Singing</i><br/>
+						<input type="checkbox" name="Hobbies"><i>Dancing</i>
+						<input type="checkbox" name="Hobbies"><i></i>Sketching<br/>
+						<input type="checkbox" name="Hobbies"><i>Others</i>
+						<input type="text" name="Hobbies"><i>(Maximum 50 Characters are allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Qualification</label>
+					</td>
+					<td>
+						<input type="checkbox" name="Qualification"><i>High School(10th)</i><br>
+						<input type="checkbox" name="Qualification"><i>Higher School(12th)</i><br>
+						<input type="checkbox" name="Qualification"><i>Graduation(Bachelor's)</i><br>
+						<input type="checkbox" name="Qualification"><i>Post Graduation(Masters)</i><br>
+						<input type="checkbox" name="Qualification"><i>Ph.D</i><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Corses Applied For</label>
+					</td>
+					<td>
+						<input type="checkbox" name="Courses"><i>BCA(Bachelor of Computer Applications)</i><br>
+						<input type="checkbox" name="Courses"><i>B.Com(Bachelor of Commerce)</i><br>
+						<input type="checkbox" name="Courses"><i>B.Sc(Bachelor of Science)</i><br>
+						<input type="checkbox" name="Courses"><i>B.A(Bachelor of Arts)</i><br>
+						<input type="checkbox" name="Courses"><i>MCA(Master of Computer Applications)</i><br>
+						<input type="checkbox" name="Courses"><i>M.Com(Master of Commerce)</i><br>
+						<input type="checkbox" name="Courses"><i>M.Sc(Master of Science)</i><br>
+						<input type="checkbox" name="Courses"><i>M.A(Master of Arts)</i><br>
+					</td>
+				</tr>
+				<td>
+					
+				</td>
+				<td>
+					<button>Submit</button>
+					<button>Reset</button>
+				</td>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
