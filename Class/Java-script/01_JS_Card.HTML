@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js Card</title>
+	<link rel="stylesheet" type="text/css" href="../BOOTSTRAP/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../BOOTSTRAP/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+</head>
+<body>
+	<div class="row mt-5">
+		<div class="col-md-5 m-auto">
+			<div class="card">
+				<div class="card-header bg-secondary text-white text-center">
+					<h1>Fees calculator</h1>
+				</div>
+				<div class="card-body bg-light">
+					<form>
+						<div class="form-group">
+							<select class="form-control" id="select">
+								<option value="">Select A Course</option>
+								<option value="java">JAVA</option>
+								<option value="python">PYTHON</option>
+								<option value="mern">MERN</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" name="" class="form-control" placeholder="Total fees" id="txt" readonly="readonly">
+						</div>
+					</form>
+				</div>
+				<div class="card-footer bg-secondary text-white text-center">
+					<h1 id="display">Select a course</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -----------------------------Script code-------------------- -->
+
+	<script>
+		let selectTag=document.querySelector("#select");
+		let displayTag=document.querySelector("#display");
+		let textBox=document.querySelector("#txt");
+		selectTag.addEventListener('change',function()
+		{
+			let selectedValue=selectTag.value;
+			displayTag.innerText=selectedValue;
+			if(selectedValue=='java')
+			{
+				textBox.value=32000;
+			}
+			else if(selectedValue=='python')
+			{
+				textBox.value=25000;
+			}
+			else if(selectedValue=='mern')
+			{
+				textBox.value=30000;
+			}
+			else
+			{
+				displayTag.innerText='please select course';
+			}
+		});
+	</script>
+</body>
+</html>
